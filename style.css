@@ -1,0 +1,41 @@
+body {
+  background-color: #8b0a50;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 100;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 600px;
+  height: auto;
+  border: 2px solid #fff;
+  margin: 100px auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.wrapper::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-top: 0 solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 0 solid #fff;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+  content: "";
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -25px;
+  background: #8b0a50;
+  /* 'background: #8b0a50;' gets rid of center line in 'diamond shape' */
+  /* 'margin-left' of -25px is need to center the box since it is 50px height & 50px width */
+}
